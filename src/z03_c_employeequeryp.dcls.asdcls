@@ -1,0 +1,11 @@
+@EndUserText.label: '_EMPLOYEEQUERYP'
+@MappingRole: true
+define role Z03_C_EMPLOYEEQUERYP {
+    grant
+        select
+            on
+                Z03_C_EMPLOYEEQUERYP
+                    where
+                        inheriting conditions from entity Z03_R_Employee;
+                        
+}

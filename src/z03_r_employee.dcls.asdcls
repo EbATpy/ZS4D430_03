@@ -1,0 +1,11 @@
+@EndUserText.label: 'Abteilung Zugriffssteuerung Ü17'
+@MappingRole: true
+define role Z03_R_EMPLOYEE {
+    grant 
+        select
+            on
+                Z03_R_EMPLOYEE
+                    where
+                        (DepartmentId) = aspect pfcg_auth(Z03DPMENT, Z03DPMNT, ACTVT = '03');
+                        
+}

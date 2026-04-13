@@ -1,0 +1,11 @@
+@EndUserText.label: 'Ü17'
+@MappingRole: true
+define role Z03_C_DEPARTMENTQUERY {
+    grant
+        select
+            on
+                Z03_C_DEPARTMENTQUERY
+                    where
+                        inheriting conditions from entity Z03_R_Department;
+                        
+}
