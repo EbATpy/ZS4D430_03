@@ -1,4 +1,7 @@
-@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AbapCatalog.viewEnhancementCategory: [#PROJECTION_LIST]
+@AbapCatalog.extensibility.dataSources: [ 'Employee' ]
+@AbapCatalog.extensibility.elementSuffix: 'ZEM'
+
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Ü5'
 @Metadata.ignorePropagatedAnnotations: true
@@ -9,7 +12,7 @@ define view entity Z03_C_EMPLOYEEQUERYP
     @EndUserText: {label: 'Datum der Bewertung'}
     @Environment: {systemField: #SYSTEM_DATE}
     p_date        : abap.dats
-  as select from Z03_R_Employee
+  as select from Z03_R_Employee as Employee
 {
   key EmployeeId,
       FirstName,
