@@ -1,0 +1,12 @@
+@EndUserText.label: 'Zugriff'
+@MappingRole: true
+define role Z03_CUSTOMERS_PLZ {
+    grant 
+        select
+            on
+                Z03CUSTOMERS_R
+                    where
+                        (Postcode) = aspect pfcg_auth( Z03_PLZ, Z03_PLZ, ACTVT = '03' );
+                        
+                        
+}
