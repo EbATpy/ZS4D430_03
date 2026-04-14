@@ -20,10 +20,10 @@ CLASS z430finaltask IMPLEMENTATION.
     DATA lt_customers TYPE TABLE OF z03customers.
 
     lt_customers = VALUE #(
-      ( customerid = 'C00001' first_name = 'Max'        last_name = 'Mustermann' city = 'Berlin'    street = 'Musterstraße 12'  postcode = '10115' ) " zz_email = 'max.mustermann@test.de'    zz_phone = '030-12345678' )
-      ( customerid = 'C00002' first_name = 'Anna'       last_name = 'Schmidt'    city = 'München'   street = 'Bahnhofstr. 45'   postcode = '80331' ) "zz_email = 'anna.schmidt@test.de'      zz_phone = '089-98765432' )
-      ( customerid = 'C00003' first_name = 'Tom'        last_name = 'Müller'     city = 'Hamburg'   street = 'Elbchaussee 78'   postcode = '22763' ) "zz_email = 'tom.mueller@test.de'       zz_phone = '040-55556666' )
-      ( customerid = 'C00004' first_name = 'Lisa'       last_name = 'Berger'      city = 'Köln'      street = 'Domkloster 3'     postcode = '50667' )" zz_email = 'lisa.berger@test.de'      zz_phone = '0221-11223344' )
+      ( customerid = 'C00001' first_name = 'Max'        last_name = 'Mustermann' city = 'Berlin'    street = 'Musterstraße 12'  postcode = '10115'   zz_email = 'max.mustermann@test.de'    zz_phone = '030-12345678' )
+      ( customerid = 'C00002' first_name = 'Anna'       last_name = 'Schmidt'    city = 'München'   street = 'Bahnhofstr. 45'   postcode = '80331'  zz_email = 'anna.schmidt@test.de'      zz_phone = '089-98765432' )
+      ( customerid = 'C00003' first_name = 'Tom'        last_name = 'Müller'     city = 'Hamburg'   street = 'Elbchaussee 78'   postcode = '22763'  zz_email = 'tom.mueller@test.de'       zz_phone = '040-55556666' )
+      ( customerid = 'C00004' first_name = 'Lisa'       last_name = 'Berger'      city = 'Köln'      street = 'Domkloster 3'     postcode = '50667'   zz_email = 'lisa.berger@test.de'      zz_phone = '0221-11223344' )
     ).
 
     DELETE FROM z03customers.
