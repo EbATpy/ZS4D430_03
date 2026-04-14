@@ -4,57 +4,56 @@
   <asx:values>
    <SIA6>
     <MAIN_OBJECT>
-     <NAME>Z03DPMNT_IAM_EXT</NAME>
+     <NAME>Z03_PLZ_IAM_EXT</NAME>
      <TYPE>SIA6</TYPE>
-     <DESCRIPTION>IAM App Ü17</DESCRIPTION>
+     <DESCRIPTION>PostCode</DESCRIPTION>
      <RESPONSIBLE>CB9980000044</RESPONSIBLE>
      <MASTER_LANGUAGE>DE</MASTER_LANGUAGE>
      <MASTER_SYSTEM>A32</MASTER_SYSTEM>
      <PACKAGE_REF>
-      <PACKAGE_NAME>ZS4D430_03</PACKAGE_NAME>
+      <PACKAGE_NAME>Z430FINALTASK</PACKAGE_NAME>
      </PACKAGE_REF>
      <ABAP_LANGU_VERSION>5</ABAP_LANGU_VERSION>
     </MAIN_OBJECT>
-    <APP_ID>Z03DPMNT_IAM_EXT</APP_ID>
+    <APP_ID>Z03_PLZ_IAM_EXT</APP_ID>
     <APP_TYPE>EXT</APP_TYPE>
     <ABAP_LANGUAGE_VERSION>5</ABAP_LANGUAGE_VERSION>
     <AUTH>
      <item>
-      <AUTH_OBJECT>Z03DPMENT</AUTH_OBJECT>
+      <AUTH_OBJECT>Z03_PLZ</AUTH_OBJECT>
       <STATUS>U</STATUS>
-      <TEXT>Berechtigung pro Abteilung Ü17</TEXT>
+      <TEXT>Z03_PLZ</TEXT>
       <AUTH_ITEM>
        <item>
-        <UUID>Ribljm1GH+GN44xZROX77w==</UUID>
-        <AUTH_OBJECT>Z03DPMENT</AUTH_OBJECT>
+        <UUID>Ribljm1GH+GOgoyDhH677w==</UUID>
+        <AUTH_OBJECT>Z03_PLZ</AUTH_OBJECT>
         <AUTH_OBJECT_INSTANCE>0001</AUTH_OBJECT_INSTANCE>
-        <TEXT>Berechtigung pro Abteilung Ü17</TEXT>
+        <TEXT>Z03_PLZ</TEXT>
         <STATUS>U</STATUS>
         <VALUES>
          <item>
-          <FIELD>ACTVT</FIELD>
-          <VALUE>Anzeigen</VALUE>
+          <FIELD>Z03_PLZ</FIELD>
+          <VALUE>10115-40115</VALUE>
           <VALUES>
            <item>
-            <UUID>Ribljm1GH+GN45SiHOjb7w==</UUID>
-            <LOW_VALUE>03</LOW_VALUE>
+            <UUID>Ribljm1GH+GOgoyDhH7b7w==</UUID>
+            <LOW_VALUE>10115</LOW_VALUE>
+            <HIGH_VALUE>40115</HIGH_VALUE>
+           </item>
+          </VALUES>
+          <TEXT>PostCode</TEXT>
+          <STATUS>U</STATUS>
+         </item>
+         <item>
+          <FIELD>ACTVT</FIELD>
+          <VALUES>
+           <item>
+            <UUID>Ribljm1GH+GOgoyDhH777w==</UUID>
            </item>
           </VALUES>
           <TEXT>Aktivität</TEXT>
           <STATUS>U</STATUS>
           <IS_ACTVT>X</IS_ACTVT>
-         </item>
-         <item>
-          <FIELD>Z03DPMNT</FIELD>
-          <VALUE>ADMIN</VALUE>
-          <VALUES>
-           <item>
-            <UUID>Ribljm1GH+GN45SiHOi77w==</UUID>
-            <LOW_VALUE>ADMIN</LOW_VALUE>
-           </item>
-          </VALUES>
-          <TEXT>Department</TEXT>
-          <STATUS>U</STATUS>
          </item>
         </VALUES>
        </item>

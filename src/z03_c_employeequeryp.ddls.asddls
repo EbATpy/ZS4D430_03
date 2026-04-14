@@ -1,15 +1,13 @@
 @AbapCatalog.viewEnhancementCategory: [#PROJECTION_LIST]
 @AbapCatalog.extensibility.dataSources: [ 'Employee' ]
 @AbapCatalog.extensibility.elementSuffix: 'ZEM'
-
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Ü5'
 @Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
 define view entity Z03_C_EMPLOYEEQUERYP
   with parameters
-    @EndUserText: {label: 'CurrencyCode'}
     p_target_curr : waers,
-    @EndUserText: {label: 'Datum der Bewertung'}
     @Environment: {systemField: #SYSTEM_DATE}
     p_date        : abap.dats
   as select from Z03_R_Employee as Employee
@@ -21,7 +19,6 @@ define view entity Z03_C_EMPLOYEEQUERYP
       _Department.Description                                                  as DepartmentDescription,
       concat_with_space( _Department._Assistant.FirstName,
                          _Department._Assistant.LastName, 1)                   as AssistantName,
-      @EndUserText: {label: 'Emplyee Role'}
       case EmployeeId when _Department.DepartmentHead      then 'H'
                       when _Department.DepartmentAssistent then 'A'
                       else                                      ''
@@ -30,11 +27,9 @@ define view entity Z03_C_EMPLOYEEQUERYP
       AnnualSalary,
       CurrencyCode,
       //--------------------------------------------------
-      @EndUserText: {label: 'Monthly Salary Currency as Paramter'}
       cast ( (cast ( $projection.AnnualSalaryConverted as abap.fltp ) / 12.0 )
             as abap.dec( 10, 2 ) )                                             as MonthlySalary,
       @Semantics.amount: {currencyCode: 'CurrencyCodeTarget'}
-      @EndUserText: {label: 'CurrencyCode'}
       currency_conversion( amount => AnnualSalary,
                   source_currency => CurrencyCode,
                   target_currency => $parameters.p_target_curr,

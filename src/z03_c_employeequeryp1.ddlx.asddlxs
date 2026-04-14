@@ -1,0 +1,13 @@
+@Metadata.layer: #CORE
+annotate view Z03_C_EMPLOYEEQUERYP with
+  parameters
+    @EndUserText.label: 'Datum der Bewertung #CORE'
+    p_date
+{
+  @EndUserText.label: ' Employee Role #CORE'
+  EmployeeRole;
+  @EndUserText.label: 'Annual Salary Converted #CORE'
+  AnnualSalaryConverted;
+  @EndUserText.label: 'Monthly Salary #CORE'
+  MonthlySalary;
+}

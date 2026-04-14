@@ -1,0 +1,11 @@
+@Metadata.layer: #CUSTOMER
+annotate view Z03_C_EMPLOYEEQUERYP
+    with parameters
+        @EndUserText.label: 'Datum der Bewertung #CUSTOMER'
+        p_date
+{
+
+    @EndUserText.label: 'AssistantName #CUSTOMER'
+    AssistantName;
+    
+}
