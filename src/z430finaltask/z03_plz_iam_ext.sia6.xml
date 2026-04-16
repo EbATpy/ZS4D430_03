@@ -36,7 +36,7 @@
           <VALUE>10115-40115</VALUE>
           <VALUES>
            <item>
-            <UUID>Ribljm1GH+GOgoyDhH7b7w==</UUID>
+            <UUID>TlPf4iw1H9GOm2CSz4US/Q==</UUID>
             <LOW_VALUE>10115</LOW_VALUE>
             <HIGH_VALUE>40115</HIGH_VALUE>
            </item>
@@ -46,9 +46,11 @@
          </item>
          <item>
           <FIELD>ACTVT</FIELD>
+          <VALUE>Anzeigen</VALUE>
           <VALUES>
            <item>
-            <UUID>Ribljm1GH+GOgoyDhH777w==</UUID>
+            <UUID>TlPf4iw1H9GOm2CSz4Uy/Q==</UUID>
+            <LOW_VALUE>03</LOW_VALUE>
            </item>
           </VALUES>
           <TEXT>Aktivität</TEXT>

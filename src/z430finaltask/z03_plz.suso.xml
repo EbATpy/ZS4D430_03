@@ -20,19 +20,7 @@
    <TACTZ>
     <TACTZ>
      <BROBJ>Z03_PLZ</BROBJ>
-     <ACTVT>01</ACTVT>
-    </TACTZ>
-    <TACTZ>
-     <BROBJ>Z03_PLZ</BROBJ>
-     <ACTVT>02</ACTVT>
-    </TACTZ>
-    <TACTZ>
-     <BROBJ>Z03_PLZ</BROBJ>
      <ACTVT>03</ACTVT>
-    </TACTZ>
-    <TACTZ>
-     <BROBJ>Z03_PLZ</BROBJ>
-     <ACTVT>06</ACTVT>
     </TACTZ>
    </TACTZ>
   </asx:values>
